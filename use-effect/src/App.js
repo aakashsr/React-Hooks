@@ -4,7 +4,8 @@ import "./App.css";
 // import ClassInputCounter from "./components/ClassInputCounter";
 // import HookInputCounter from "./components/HookInputCounter";
 // import ClassMouse from './components/ClassMouse';
-import MouseContainer from "./components/MouseContainer";
+// import MouseContainer from "./components/MouseContainer";
+import InterverClassCounter from "./components/InterverClassCounter";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       {/* <HookCounter /> */}
       {/* <ClassInputCounter /> */}
       {/* <ClassMouse /> */}
-      <MouseContainer />
+      <InterverClassCounter />
     </div>
   );
 }
