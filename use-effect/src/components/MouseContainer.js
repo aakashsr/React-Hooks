@@ -1,21 +1,12 @@
-import React from "react";
-import ClassMouse from "./ClassMouse";
+import React ,{useState,useEffect} from 'react'
+import HookMouse from './HookMouse';
 
-export default class MouseContainer extends React.Component {
-  state = {
-    display: true,
-  };
-
-  setDisplay() {
-    this.setState((prevState) => ({ display: !prevState.display }));
-  }
-  render() {
-    console.log(this.state.display);
+export default function MouseContainer() {
+    const [display,setDisplay] = useState(true);
     return (
-      <div>
-        <button onClick={() => this.setDisplay()}>Toggle</button>
-        {this.state.display && <ClassMouse />}
-      </div>
-    );
-  }
+        <div>
+            <button onClick={() => setDisplay(!display)}>Toggle</button>
+            {display && <HookMouse />}
+        </div>
+    )
 }
