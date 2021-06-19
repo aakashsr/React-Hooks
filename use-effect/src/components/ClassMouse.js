@@ -6,13 +6,19 @@ export default class ClassMouse extends Component {
     y: 0,
   };
 
-  logMousePosition = (e) =>{
+  logMousePosition = (e) => {
+    console.log("mouse event");
     this.setState({ x: e.clientX, y: e.clientY });
   };
 
   componentDidMount() {
-    window.addEventListener("mousemove",this.logMousePosition);
+    window.addEventListener("mousemove", this.logMousePosition);
   }
+
+  componentWillUnmount() {
+    window.removeEventListener("mousemove", this.logMousePosition);
+  }
+
   render() {
     return (
       <div>

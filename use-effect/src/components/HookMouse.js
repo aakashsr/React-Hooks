@@ -5,15 +5,19 @@ export default function HookMouse() {
   const [y, setY] = useState(0);
 
   const logMousePosition = (e) => {
-      console.log('mouse event');
+    console.log("mouse event");
     setX(e.clientX);
     setY(e.clientY);
   };
 
   useEffect(() => {
-      console.log('useeffect called');
+    console.log("useeffect called");
     window.addEventListener("mousemove", logMousePosition);
-  },[]);
+
+    return () =>{
+        window.removeEventListener("mousemove", logMousePosition);
+    }
+  }, []);
 
   return (
     <div>
