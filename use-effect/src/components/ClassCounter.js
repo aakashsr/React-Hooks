@@ -20,7 +20,7 @@ export default class ClassCounter extends Component {
     return (
       <div>
         <h1>{this.state.count}</h1>
-        <button onClick={this.incrementCount} style={{background: 'none ',color:'#ccc',backgroundColor:'green',border:'none'}}>Increment</button>
+        <button onClick={this.incrementCount}>Increment</button>
       </div>
     );
   }
