@@ -8,7 +8,7 @@
 // import InterverClassCounter from "./components/timer/InterverClassCounter";
 // import IntervalHookCounter from "./components/timer/IntervalHookCounter";
 // import ClassDataFetching from "./components/dataFetching/ClassDataFetching";
-// import HookDataFetching from "./components/dataFetching/HookDataFetching";
+import HookDataFetching from "./components/dataFetching/HookDataFetching";
 // import HookDataFetchingonClick from "./components/dataFetchingonClick/HookDataFetchingonClick";
 // import ColourfulCounter from "./components/colorfulCounter/ColourfulCounter";
 import ColorfulTimer from "./components/colorfulTimer/ColorfulTimer";
@@ -22,12 +22,12 @@ function App() {
       {/* <ClassMouse /> */}
       {/* <InterverClassCounter />}
       {/* <ClassDataFetching /> */}
-      {/* <HookDataFetching /> */}
+      <HookDataFetching />
       {/* <HookDataFetchingonClick /> */}
       {/* <ColourfulCounter /> */}
       {/* <IntervalHookCounter /> */}
       {/* <ColorfulTimer /> */}
-      <ClassColorfulTimer />
+      {/* <ClassColorfulTimer /> */}
     </div>
   );
 }

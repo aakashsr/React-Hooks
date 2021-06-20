@@ -1,4 +1,5 @@
 import React from "react";
+import '../../styles/popular.css';
 
 export default function Card(props) {
   const { name, svn_url, stargazers_count: stars_count, forks, open_issues, owner } = props.data;
