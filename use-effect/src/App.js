@@ -9,6 +9,7 @@ import InterverClassCounter from "./components/InterverClassCounter";
 import IntervalHookCounter from "./components/IntervalHookCounter";
 import ClassDataFetching from "./components/ClassDataFetching";
 import HookDataFetching from "./components/HookDataFetching";
+import HookDataFetchingonClick from "./components/HookDataFetchingonClick";
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
       {/* <InterverClassCounter />
       <IntervalHookCounter /> */}
       {/* <ClassDataFetching /> */}
-      <HookDataFetching />
+      {/* <HookDataFetching /> */}
+      <HookDataFetchingonClick />
     </div>
   );
 }
-
 export default App;
