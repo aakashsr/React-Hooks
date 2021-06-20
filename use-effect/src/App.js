@@ -10,6 +10,7 @@ import IntervalHookCounter from "./components/IntervalHookCounter";
 import ClassDataFetching from "./components/ClassDataFetching";
 import HookDataFetching from "./components/HookDataFetching";
 import HookDataFetchingonClick from "./components/HookDataFetchingonClick";
+import ColourfulCounter from "./components/ColourfulCounter";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       <IntervalHookCounter /> */}
       {/* <ClassDataFetching /> */}
       {/* <HookDataFetching /> */}
-      <HookDataFetchingonClick />
+      {/* <HookDataFetchingonClick /> */}
+      <ColourfulCounter />
     </div>
   );
 }
