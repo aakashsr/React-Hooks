@@ -11,7 +11,6 @@ export default class ClassDataFetching extends Component {
 
   componentDidMount() {
     axios.get("https://jsonplaceholder.typicode.com/posts").then((response) => {
-    //   console.log(response);
       this.setState({
         posts: response.data,
       });
@@ -20,6 +19,12 @@ export default class ClassDataFetching extends Component {
   }
 
   render() {
-    return <div>{this.state.posts.map((post) => <li>{post.title}</li>)}</div>;
+    return (
+      <div>
+        {this.state.posts.map((post) => (
+          <li>{post.title}</li>
+        ))}
+      </div>
+    );
   }
 }
