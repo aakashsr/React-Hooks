@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "./Card";
+import Card from "../Card/Card";
 import axios from "axios";
 
 export default function HookDataFetching() {

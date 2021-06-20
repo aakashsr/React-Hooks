@@ -5,12 +5,12 @@ import "./App.css";
 // import HookInputCounter from "./components/HookInputCounter";
 // import ClassMouse from './components/ClassMouse';
 // import MouseContainer from "./components/MouseContainer";
-import InterverClassCounter from "./components/InterverClassCounter";
-import IntervalHookCounter from "./components/IntervalHookCounter";
-import ClassDataFetching from "./components/ClassDataFetching";
-import HookDataFetching from "./components/HookDataFetching";
-import HookDataFetchingonClick from "./components/HookDataFetchingonClick";
-import ColourfulCounter from "./components/ColourfulCounter";
+import InterverClassCounter from "./components/timer/InterverClassCounter";
+import IntervalHookCounter from "./components/timer/IntervalHookCounter";
+import ClassDataFetching from "./components/dataFetching/ClassDataFetching";
+import HookDataFetching from "./components/dataFetching/HookDataFetching";
+import HookDataFetchingonClick from "./components/dataFetchingonClick/HookDataFetchingonClick";
+import ColourfulCounter from "./components/colorfulCounter/ColourfulCounter";
 
 function App() {
   return (
