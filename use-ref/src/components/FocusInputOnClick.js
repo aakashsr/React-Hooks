@@ -15,7 +15,9 @@ export default function FocusInput() {
   return (
     <div>
       <input disabled={disabled} ref={inputRef} type="text" />
-      <button onClick={() => focus()}>Start typing..</button>
+      <button onClick={() => focus()}>
+        {disabled ? "Start typing" : "Stop typing"}
+      </button>
     </div>
   );
 }
