@@ -5,8 +5,8 @@ import HookTimer from './components/HookTimer'
 
 function App() {
   return (
-    // <FocusInput />
-    <HookTimer />
+    <FocusInput />
+    // <HookTimer />
   );
 }
 
