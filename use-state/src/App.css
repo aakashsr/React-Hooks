@@ -56,3 +56,18 @@ button {
   display: inline-block;
   margin-top: 20px;
 }
+
+.long-btn{
+  width:110px;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  background: aqua;
+  padding: 10px;
+  margin-bottom: 5px;
+}
