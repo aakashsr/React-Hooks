@@ -57,11 +57,11 @@ button {
   margin-top: 20px;
 }
 
-.long-btn{
-  width:110px;
+.long-btn {
+  width: 110px;
 }
 
-ul{
+ul {
   list-style-type: none;
   padding: 0;
 }
@@ -70,4 +70,15 @@ ul{
   background: aqua;
   padding: 10px;
   margin-bottom: 5px;
+}
+
+.form{
+  margin-top: 20px;
+}
+
+.input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 0.5px solid;
+  margin-right: 10px;
 }

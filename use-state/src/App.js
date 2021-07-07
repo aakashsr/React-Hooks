@@ -2,7 +2,8 @@ import "./App.css";
 import ClassCounter from "./components/ClassCounter";
 import HookCounter from "./components/HookCounter";
 import HookForm from "./components/HookForm";
-import HookList from "./components/HookList"
+import HookList from "./components/HookList";
+import HookContact from "./components/HookContact";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <ClassCounter /> */}
       {/* <HookCounter /> */}
       {/* <HookForm /> */}
-      <HookList />
+      {/* <HookList /> */}
+      <HookContact />
     </div>
   );
 }
