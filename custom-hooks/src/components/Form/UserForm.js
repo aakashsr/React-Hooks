@@ -3,11 +3,10 @@ import useForm from './useForm';
 
 export default function UserForm() {
   const [user,handleChange,handleSubmit] = useForm();
-
-  console.log(user.firstName, user.lastName);
+  console.log('from user');
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit} >
         <div>
           <label>First Name</label>
           <input
@@ -26,7 +25,7 @@ export default function UserForm() {
             name="lastName"
           />
         </div>
-        <button onClick={handleSubmit}>Submit</button>
+        <button>Submit</button>
       </form>
     </div>
   );
