@@ -4,9 +4,9 @@ const initialState = { counter: 0 };
 const reducer = (state, action) => {
   switch (action.type) {
     case "increment":
-      return { ...state, counter: state.counter + action.value };
+      return {  counter: state.counter + action.value };
     case "decrement":
-      return { ...state, counter: state.counter - action.value };
+      return {  counter: state.counter - action.value };
     case "reset":
       return initialState;
     default:
@@ -15,6 +15,9 @@ const reducer = (state, action) => {
 };
 
 function Counter4() {
+  // creating two seperate copy of value "counter" is pointing to i,e 0
+  // and assigning a seperate "dispatch" method to each copy.
+  // This way , we don't need to merge the state as we've only one state.
   const [state, dispatch] = useReducer(reducer, initialState);
   const [stateTwo, dispatchTwo] = useReducer(reducer, initialState);
   return (

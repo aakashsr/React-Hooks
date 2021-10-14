@@ -27,21 +27,21 @@ import DataFetchingTwo from "./components/Datafetching/DataFetchingTwo";
 //   }
 // };
 
-
 function App() {
   // const [count, dispatch] = useReducer(reducer, initialState);
   return (
     // <CountContext.Provider
     //   value={{ countState: count, countDispatch: dispatch }}
     // >
-      <div className="App">
-        {/* <h1>{count}</h1>
+    <div className="App">
+      {/* <h1>{count}</h1>
         <CompA />
         <CompB />
         <CompC /> */}
-        {/* <DataFetchingOne /> */}
-        <DataFetchingTwo />
-      </div>
+      {/* <DataFetchingOne /> */}
+      {/* <DataFetchingTwo /> */}
+      <Counter3 />
+    </div>
     // </CountContext.Provider>
   );
 }

@@ -4,13 +4,13 @@ const initialState = { counterOne: 0, counterTwo: 0 };
 const reducer = (state, action) => {
   switch (action.type) {
     case "increment":
-      return { ...state, counterOne: state.counterOne + action.value };
+      return {  counterOne: state.counterOne + action.value };
     case "decrement":
-      return { ...state, counterOne: state.counterOne - action.value };
+      return {  counterOne: state.counterOne - action.value };
     case "increment2":
-      return { ...state, counterTwo: state.counterTwo + action.value };
+      return {  counterTwo: state.counterTwo + action.value };
     case "decrement2":
-      return { ...state, counterTwo: state.counterTwo - action.value };
+      return {  counterTwo: state.counterTwo - action.value };
     case "reset":
       return initialState;
     default:

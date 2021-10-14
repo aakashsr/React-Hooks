@@ -6,8 +6,8 @@ import FocusInputOnClick from "./components/FocusInputOnClick";
 
 function App() {
   return (
-    // <FocusInput />
-    <FocusInputOnClick />
+    <FocusInput />
+    // <FocusInputOnClick />
     // <HookTimer />
   );
 }

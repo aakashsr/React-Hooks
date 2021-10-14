@@ -1,14 +1,34 @@
-import React, { useEffect, useRef } from "react";
+// import React, { useEffect, useRef } from "react";
+
+// export default function FocusInput() {
+//   const inputRef = useRef(null);
+
+//   useEffect(() =>{
+//     inputRef.current.focus();
+//   },[])
+//   return (
+//     <div>
+//       <input ref={inputRef} type="text" />
+//     </div>
+//   );
+// }
+
+import React, { useState, useRef, useEffect } from "react";
 
 export default function FocusInput() {
-  const inputRef = useRef(null);
+  const inputRef = useRef();
 
-  useEffect(() =>{
+  const focus = () => {
     inputRef.current.focus();
-  },[])
+  }
+
+  // useEffect(() => {
+  //   inputRef.current.focus();
+  // }, []);
   return (
-    <div>
+    <>
       <input ref={inputRef} type="text" />
-    </div>
+      <button onClick={(e) => focus(e)}>Start Typing</button>
+    </>
   );
 }
