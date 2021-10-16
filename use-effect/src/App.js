@@ -14,7 +14,8 @@ import HookInputCounter from "./components/updateDocumentTitle/HookInputCounter"
 import ColorfulTimer from "./components/colorfulTimer/ColorfulTimer";
 import ClassColorfulTimer from "./components/colorfulTimer/ClassColorfulTimer";
 import UserInput from "./components/LocalStorage/UserInput";
-import WindowResize from "./components/windowResize/WindowResize";
+// import WindowResize from "./components/windowResize/WindowResize";
+import LoadingAndErrorHandling from "./components/loadingAndErrorHandling/LoadingAndErrorHandling";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       {/* <ClassColorfulTimer /> */}
       {/* <HookInputCounter /> */}
       {/* <UserInput /> */}
-      <WindowResize />
+      {/* <WindowResize /> */}
+      <LoadingAndErrorHandling />
     </div>
   );
 }
